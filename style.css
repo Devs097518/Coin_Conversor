@@ -1,44 +1,47 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Hind+Mysuru:wght@300;400;500;600;700&family=Kumbh+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Tiny5&family=Workbench&display=swap');
 
-@media(min-width:100px){
+
+@media(min-width:100px) {
     #container {
         display: grid;
         width: 100%;
         margin: auto;
-        
+
         grid-template-rows: 4, auto;
         grid-template-columns: 12, auto;
-        font-family: monospace;
+        font-family: "Kumbh Sans", serif;
     }
+
 }
 
-@media(min-width:400px){
+@media(min-width:400px) {
     #container {
         display: grid;
         width: 70%;
         margin: auto;
-    
+
         grid-template-rows: 4, auto;
         grid-template-columns: 12, auto;
-        font-family: monospace;
+        font-family: "Kumbh Sans", serif;
     }
+
+    
 }
 
 body {
     margin: 0;
-    
-  font-weight: 600;
-  font-style: normal;
-  background-image: url(money.jpg);
-  background-repeat: repeat;
+    background-image: url(worldmap2.jpg);
+    background-size: cover;
 }
 
 
 
 #cabeca {
     padding: 1em;
-    background-color: rgb(74, 170, 71);
+    background-image: url(textura1.jpg);
+    background-repeat: repeat;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -64,7 +67,7 @@ body {
 
 #corpo {
     padding: 5em;
-    background-color: rgb(74, 170, 71);
+    background-color: rgb(255, 162, 0);
     grid-column: 1/12;
     grid-row: 2/3;
     border-left: 2px black solid;
@@ -83,8 +86,7 @@ body {
 }
 
 #a {
-    grid-column: 1/4;
-    grid-row: 2/3;
+    width: 20em;
     border: 2px solid gray;
 }
 
@@ -95,24 +97,91 @@ body {
 }
 
 #A {
-    grid-column: 8/11;
-    grid-row: 2/3;
+    width: 20em;
     border: 2px solid gray;
+}
+
+#bandeiraA {
+    height: 3em;
 }
 
 
 #b {
     grid-column: 2/5;
     grid-row: 4/5;
-    border: 2px solid gray;
-    max-height: 20px;
+    border: 0;
+    height: 20px;
+
+    background-color: aliceblue;
+    padding: 1em;
+    border-radius: 50px;
 }
 
-#B{
+#B {
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 100;
     text-shadow: 4px 4px 1px rgba(255, 255, 255, 0.377);
+
+    background-color: aliceblue;
+    padding: 15px;
+    height: 20px;
+    min-width: 8em;
+
+    border-radius: 0 50px 50px 0;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-right: black 1px solid;
+}
+
+#B {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 100;
+    text-shadow: 4px 4px 1px rgba(255, 255, 255, 0.377);
+
+    background-color: aliceblue;
+    padding: 15px;
+    height: 20px;
+    min-width: 8em;
+
+    border-radius: 0 50px 50px 0;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-right: black 1px solid;
+}
+
+#grupo4{
+    display: flex;
+    align-items: center;
+    grid-row: 4/5;
+    grid-column: 7/9;
+}
+
+.moneyicon{
+    padding: 15px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+    border: 1px black solid;
+}
+
+#bandeiraB {
+    height: 3em;
+}
+
+.grupos {
+    display: flex;
+}
+
+#grupo1 {
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+#grupo2 {
+    grid-column: 7/11;
+    grid-row: 2/3;
 }
 
 #setona {
@@ -120,6 +189,10 @@ body {
     grid-row: 4/5;
     margin: auto;
     transition: all 0.5s ease;
+    background-color: aliceblue;
+    padding: 1em;
+    border-radius: 50px;
+    border: gray 1px solid;
 }
 
 .igual {
@@ -127,7 +200,7 @@ body {
     grid-row: 4/5;
     margin: auto;
     transition: all 0.5s ease;
-    
+
 }
 
 .igual:hover {
@@ -148,6 +221,8 @@ body {
 #pe {
     padding: 3em;
     background-color: rgb(74, 170, 71);
+    background-image: url(textura1.jpg);
+    background-repeat: repeat;
 
     grid-column: 1/12;
     grid-row: 3/4;

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=equal" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=equal" />
     <title>Coin Conversor</title>
 </head>
+
 <body>
     <div id="container">
         <div id="cabeca">
@@ -16,39 +19,54 @@
         </div>
         <div id="corpo">
             <p id="descricao">
-                Esta é uma calculadora de moedas internacionais, onde o valor do câmbio é atualizado diariamente com a ajuda de servidores externos, então não há preocupação pois cada conversão entre os valores estarão em dia.
+                Esta é uma calculadora de moedas internacionais, onde o valor do câmbio é atualizado diariamente com a
+                ajuda de servidores externos, então não há preocupação pois cada conversão entre os valores estarão em
+                dia.
             </p>
-            
-            <img src="Brasil.png" alt="" id="bandeiraA" class="bandeiras">
-            <select type="number" id="a">
-                <option value="Brasil">Brasil</option>
-                <option value="Chile">Chile</option>
-                <option value="EUA">EUA</option>
-                <option value="Japao">Japão</option>
-                <option value="Euro">Euro</option>
-                <option value="Africa">Rand Sul-Africano</option>
-                <option value="China">Yuan Chinês</option>
-            </select>
+
+            <div id="grupo1" class="grupos">
+                <select type="number" id="a">
+                    <option value="Brasil">BRL</option>
+                    <option value="Chile">CHP</option>
+                    <option value="EUA">USD</option>
+                    <option value="Japao">JPY</option>
+                    <option value="Euro">EUR</option>
+                    <option value="Africa">ZAR</option>
+                    <option value="China">CNY</option>
+                </select>
+                <img src="Brasil.png" alt="" id="bandeiraA" class="bandeiras">
+
+            </div>
+
             <p id="seta"><i class="bi bi-arrow-right"></i></p>
 
-            <img src="Brasil.png" alt="" id="bandeiraB" class="bandeiras">
-            <select type="number" id="A">
-                <option value="Brasil">Brasil</option>
-                <option value="Chile">Chile</option>
-                <option value="EUA">EUA</option>
-                <option value="Japao">Japão</option>
-                <option value="Euro">Euro</option>
-                <option value="Africa">Rand Sul-Africano</option>
-                <option value="China">Yuan Chinês</option>
-            </select>
+
+            <div id="grupo2" class="grupos">
+                <select type="number" id="A">
+                    <option value="Brasil">BRL</option>
+                    <option value="Chile">CLP</option>
+                    <option value="EUA">USD</option>
+                    <option value="Japao">JPY</option>
+                    <option value="Euro">EUR</option>
+                    <option value="Africa">ZAR</option>
+                    <option value="China">CNY</option>
+                </select>
+                <img src="Brasil.png" alt="" id="bandeiraB" class="bandeiras">
+            </div>
+
 
             <input type="number" id="b" placeholder="Digite o valor aqui">
+
             <p id="setona"><span class="material-symbols-outlined igual">
-                equal
+                    equal
                 </span></p>
-                
-            <p type="number" id="B"></p>
+
+                <div id="grupo4">
+                    <i class="bi bi-cash-coin moneyicon"></i>
+                  <p type="number" id="B"></p>  
+                </div>
             
+
         </div>
 
         <div id="pe">
@@ -58,4 +76,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
