@@ -13,6 +13,8 @@ fetch(url)
         moedaeu = data.conversion_rates.EUR;
         moedaaf = data.conversion_rates.ZAR;
         moedach = data.conversion_rates.CNY;
+        moedamx = data.conversion_rates.MXN;
+        moedacv = data.conversion_rates.CVE;
 
 
 
@@ -59,6 +61,14 @@ fetch(url)
                     moedaA = moedach;
                 }
 
+                if (moedaA == 'Mexico') {
+                    moedaA = moedamx;
+                }
+
+                if (moedaA == 'Caboverde') {
+                    moedaA = moedacv;
+                }
+
             };
 
             const selecR = document.getElementById('A').selectedOptions;
@@ -92,6 +102,14 @@ fetch(url)
 
                 if (moedaB == 'China') {
                     moedaB = moedach;
+                }
+                
+                if (moedaB == 'Mexico') {
+                    moedaB = moedamx;
+                }
+
+                if (moedaB == 'Caboverde') {
+                    moedaB = moedacv;
                 }
             };
 
