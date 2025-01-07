@@ -1,4 +1,4 @@
-const url = 'https://v6.exchangerate-api.com/v6/b7e287de4220e4d73800e1e3/latest/USD';
+const url = 'https://v6.exchangerate-api.com/v6/1626185fcdbfeca4a144e063/latest/USD';
 
 let moedabr;
 let moedacl;
